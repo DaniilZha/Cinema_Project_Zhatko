@@ -16,10 +16,6 @@ body
     margin: 0;
     margin-left: 17px;
 }
-.n-menu
-{
-    display: none;
-}
 .menu-link
 {
     color: white;
@@ -33,24 +29,18 @@ body
 {
     max-width: 1170px;
     margin: auto;
-    width: 90%;
 }
 .header
 {
     min-height: 100vh;
     background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url('../img/bg.png') no-repeat center top / cover ;
 }
-
 .navbar
 {
     display: flex;
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
-}
-.nav
-{
-    position: relative;
 }
 .user
 {
@@ -204,19 +194,13 @@ select option
 }
 .select-cinema
 {
-    width: 470px;
+    min-width: 470px;
 }
 .scheme
 {
     background: rgba(36, 36, 36, 0.18);
     border-radius: 10px;
     margin-bottom: 40px;
-    
-}
-.scheme-svg
-{
-    max-width: 1170px;
-    
 }
 .scheme path:not(.light)
 {
@@ -237,7 +221,6 @@ select option
     display: flex;
     align-items:center;
     max-width: 1024px;
-    width: 90%;
     margin: auto;
     padding-top: 22px;
     padding-bottom: 38px;
@@ -287,96 +270,4 @@ select option
     font-size: 18px;
     line-height: 21px;
     text-decoration: none;
-}
-@media (max-width: 1200px)
-{
-    .conteiner
-    {
-        max-width: 960px;
-    }
-    .select-cinema
-    {
-        width: 100%;
-    }
-}
-@media (max-width:992px)
-{
-    .conteiner
-    {
-        max-width: 750px;
-    }
-    .session
-    {
-        flex-wrap: wrap;
-    }
-    .session-date
-    {
-        margin-bottom: 40px;
-        flex-basis: 70%;
-    }
-    .session-cinema
-    {
-        order: 3;
-    }
-    .menu-item
-    {
-        margin-right: 20px;
-    }
-}
-@media (max-width: 768px)
-{
-    .conteiner
-    {
-        max-width: 560px;
-    }
-    .menu
-    {
-        position: absolute;
-        left: 0;
-        top: 40px;
-        padding: 20px;
-        margin-left: 20px;
-        flex-direction: column;
-        background: #621402;
-        z-index: 9;
-        border-radius: 10px;
-        opacity: 0;
-        visibility: hidden;
-        transform: translateX(-100%);
-        transition: opacity 0.4s, transform 0.5s;
-    }
-    .menu-item:not(:last-child)
-    {
-        margin-bottom: 10px;
-    }
-    .n-menu
-    {
-        display: block;
-        background: transparent;
-        border: none;
-        width: 40px;
-        height: 40px;
-        margin-left: 10px;
-        color:#fff;
-        cursor:pointer
-    }
-    .is-open
-    {
-        opacity: 1;
-        visibility: visible;
-        transform: translateX(0);
-    }
-    .film-description
-    {
-        margin-right: 30px;
-    }
-    .film
-    {
-        flex-direction: column;
-    }
-    .film-trailler
-    {
-        margin-right: auto;
-        margin-left: 0;
-    }
 }
